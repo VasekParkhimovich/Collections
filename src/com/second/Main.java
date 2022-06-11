@@ -48,8 +48,10 @@ class MyObj{
         count++;
     }
     void show(){
+
         System.out.println("Имя обьекта номер "+num+":"+name+".");
     }
 }
+
 
 
