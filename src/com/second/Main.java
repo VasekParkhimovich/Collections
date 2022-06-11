@@ -16,7 +16,10 @@ public class Main {
             nameList.add("Юлия");
             System.out.println(nameList.size());
 
-            Iterator itName = nameList.iterator();
+            Iterator itName = nameList.iterator(); /* проходим итератером по списку имен, добавляем полученный обьект в str, а str добавляем в конструктор.
+            Также в конструктор добавляется перменная i,
+            благодаря которой в тексте появляется номер обьекта
+             */
             while (itName.hasNext()) {
                 for (int i=1;i<(nameList.size())+1; i++) {
                     String str = (String) itName.next();
@@ -24,7 +27,7 @@ public class Main {
                 }
             }
             Iterator itShow = list.iterator();
-            for (int i = 1; i < 7; i++) {
+            for (int i = 1; i <list.size()+1; i++) {
                 while (itShow.hasNext()) {
                     MyObj a = (MyObj) itShow.next();
                     a.show();
