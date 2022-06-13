@@ -5,6 +5,26 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        NameList nameList = new NameList();
+        nameList.showName();
+
+    }
+}
+class MyObj{
+    static int count = 0;
+    int num;
+    String name;
+    MyObj(String name, int num){
+        this.name = name;
+        this.num = num;
+        count++;
+    }
+    void show(){
+        System.out.println("Имя обьекта номер "+num+":"+name+".");
+    }
+}
+class NameList{
+    void showName(){
         try {
             ArrayList<MyObj> list = new ArrayList<MyObj>();
             ArrayList<String> nameList = new ArrayList<String>();
@@ -36,21 +56,11 @@ public class Main {
         }catch(NoSuchElementException e){
             System.out.println("Error "+ e);
         }
+
     }
 }
-class MyObj{
-    static int count = 0;
-    int num;
-    String name;
-    MyObj(String name, int num){
-        this.name = name;
-        this.num = num;
-        count++;
-    }
-    void show(){
-
-        System.out.println("Имя обьекта номер "+num+":"+name+".");
-    }
+class MyHashMap{
+    
 }
 
 
