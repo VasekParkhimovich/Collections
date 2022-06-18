@@ -1,4 +1,6 @@
-package com.second;
+package Comparators;
+import com.second.Phone;
+
 import java.util.Comparator;
 
 public class ScreenComparator implements Comparator<Phone>{

@@ -1,4 +1,6 @@
 package com.second;
+import Comparators.*;
+
 import java.util.*;
 
 public class Main {
@@ -16,7 +18,7 @@ public class Main {
         Phone p9 = new Phone("HTC",5.9,2019,710,54,899.9);
         Phone p10 = new Phone("Benq",6.1,2022,801,49,959.7);
         Phone p11 = new Phone("Siemens",5.0,2019,425,16,699.9);
-        ArrayList<Phone> phones = new ArrayList<Phone>();
+        ArrayList<Phone> phones = new ArrayList<>();
         phones.add(p1);
         phones.add(p2);
         phones.add(p3);
